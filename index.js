@@ -19,7 +19,7 @@ function deepestChild() {
   
   do {
     nextEl = nextEl.querySelector("div");
-  } while ( nextEl !== undefined)
+  } while ( nextEl !== null)
   
   return nextEl;
 }
