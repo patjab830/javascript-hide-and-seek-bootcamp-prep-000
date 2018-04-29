@@ -7,13 +7,13 @@ function nestedTarget() {
 }
 
 function increaseRankBy(n) {
-  var elRankedList = document.querySelectorAll(".ranked-list");
+  var elRankedList = document.querySelectorAll("ul.ranked-list li");
   
   for ( var i = 0; i < elRankedList.length; i++ ) {
-    for ( var j = 0; j < elRankedList[i].length; j++ ) {
-      elRankedList[i]++;
-    }
+    elRankedList[i].innerHTML = parseInt(elRankedList[i].innerHTML) + n;
   }
 }
 
-function()
+function deepestChild() {
+  document.querySelector('div#grand-node');
+}
