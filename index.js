@@ -1,5 +1,5 @@
 function getFirstSelector(selector) {
-  return querySelector(selector);
+  return document.querySelector(selector);
 }
 
 function nestedTarget() {
@@ -18,7 +18,7 @@ function deepestChild() {
   var nextEl = document.querySelector('div#grand-node');
   
   do {
-    nextEl = nextEl.querySelector("#div");
+    nextEl = nextEl.querySelector("div");
   } while ( nextEl !== undefined)
   
   return nextEl;
